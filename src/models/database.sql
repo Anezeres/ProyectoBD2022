@@ -14,6 +14,8 @@ CREATE TABLE usuarios (
     password VARCHAR(255) NOT NULL;
 );
 
+INSERT INTO usuarios VALUES ('nombre, direccion, email, telefono, recibo, metodoPago');
+
 CREATE TABLE servicios;
 CREATE TABLE trabajador;
 CREATE TABLE labor;
