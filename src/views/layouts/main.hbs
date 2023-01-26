@@ -1,17 +1,103 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Memmo</title>
     <!-- BOOTSTRAP 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  </head>
-  <body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="">
+                    <i class="bi bi-exclude"></i>
+                    <span class="text-warning">Memmo</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="/">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/about-us">Sobre nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/services">Servicios</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Cuenta
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Ingresar</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+    </div>
+
     <div class="container">
         {{{body}}}
     </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  </body>
+
+    <div class="container-fluid">
+        <div class="row p-5 bg-secondary text-white">
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h3">Memmo</p>
+                
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5 mb-3">Información</p>
+                <div class="mb-2">
+                    <a class="text-white text-decoration-none" href="">Creadores</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-white text-decoration-none" href="">Dudas</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-white text-decoration-none" href="">Preguntas Frecuentes</a>
+                </div>
+                
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5">Links</p>
+                <div class="mb-2">
+                    <a class="text-white text-decoration-none" href="">Terms & Condiciones</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-white text-decoration-none" href="">Politica de Privacidad</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5">Contacto</p>
+                <div class="mb-2">
+                    <a class="text-white text-decoration-none" href="">Instagram</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-white text-decoration-none" href="">Facebook</a>
+                </div>
+            </div>    
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

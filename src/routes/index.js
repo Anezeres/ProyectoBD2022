@@ -8,6 +8,8 @@ const image = require('../controllers/image');
 module.exports = app => {
 
     router.get('/', home.index);
+    router.get('/about-us', home.about);
+    router.get('/services', home.servicios);
     router.get('/trabajador/:id', image.index);
     router.post('/trabajador', image.create);
     router.post('/trabajador/:id/like', image.like);
