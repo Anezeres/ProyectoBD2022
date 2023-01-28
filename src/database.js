@@ -2,8 +2,8 @@ const { Pool } = require('pg');
 
 const config = {
     user: 'ebjtbucz',
-    host: 'localhost',
-    password: 'kandula.db.elephantsql.com',
+    host: 'kandula.db.elephantsql.com',
+    password: 'VMdYBotsBATUqhS1y3jDCqJ5nrFab7On',
     database: 'ebjtbucz'
 };
 
@@ -12,9 +12,10 @@ const pool = new Pool(config);
 const getUsuarios = async () => {
     try {
         console.log('Listando usuarios: ');
-        const res =  await pool.query('SELECT * FROM usuarios');
-        console.log(res); // Esto devuelve un objeto con bastante información
-        console.log(res.rows); // Esto me devuelve solo las filas de la base de datos.
+        const res =  await pool.query('SELECT * FROM clientas');
+        res.status(200).json(res.rows);
+        ///console.log(res); // Esto devuelve un objeto con bastante información
+        //console.log(res.rows); // Esto me devuelve solo las filas de la base de datos.
 
     } catch (e) {
         console.log(e);
@@ -51,6 +52,10 @@ const editUser = async () => {
     const res = await pool.query(text,valores);
     console.log(res);
 };
+
+module.exports = {
+    getUsuarios
+}
 
 getUsuarios(); // Así se realiza la consulta
 
