@@ -14,6 +14,11 @@ module.exports = app => {
     router.get('/contact', home.contact);
     router.get('/register', home.register);
     router.get('/prueba', home.prueba);
+    router.get('/dashboard', home.dashboard);
+    router.get('/ajustes', home.ajustes);
+    router.get('/solicitudes', home.solicitudes);
+    router.get('/politicas', home.politicas);
+    router.get('/cupones', home.cupones);
     /*
     router.get('/trabajador/:id', image.index);
     router.post('/trabajador', image.create);
