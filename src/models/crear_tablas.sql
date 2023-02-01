@@ -25,7 +25,7 @@ ALTER TABLE public.personas ADD CONSTRAINT personas_pk PRIMARY KEY (persona_id);
  * foto llevaria el nombre del archivo que tiene la foto del trabajador
  */
 create table trabajadores(
-	trabajador_id integer,
+	trabajador_id SERIAL,
 	trabajador_calificacion int
 );
 ALTER TABLE public.trabajadores ADD CONSTRAINT trabajadores_pk PRIMARY KEY (trabajador_id);
