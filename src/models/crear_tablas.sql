@@ -1,4 +1,3 @@
-
 drop table if exists personas cascade;
 drop table if exists trabajadores cascade;
 drop table if exists clientes cascade;
@@ -72,7 +71,7 @@ create table servicios_procesados(
 	procesado_id SERIAL,
 	servicio_fk integer,
 
-
+	cliente_fk integer,
 	procesado_costo integer,
 	procesado_unidades integer,
 	procesado_pagado boolean,
@@ -80,10 +79,14 @@ create table servicios_procesados(
 );
 ALTER TABLE public.servicios_procesados ADD CONSTRAINT procesados_pk PRIMARY KEY (procesado_id);
 ALTER TABLE public.servicios_procesados ADD CONSTRAINT procesado_servicio_fk FOREIGN KEY (servicio_fk) REFERENCES public.servicios_disponibles(servicio_id) ON DELETE CASCADE;
+ALTER TABLE public.servicios_procesados ADD CONSTRAINT procesado_cliente_fk FOREIGN KEY (cliente_fk) REFERENCES public.clientes(cliente_id) ON DELETE CASCADE;
 
 create table pagos (
 	pago_id SERIAL,
 	pago_total integer,
-	pago_fecha varchar(15)
+	pago_fecha varchar(15),
+	pago_trabajador_fk integer
 );
 ALTER TABLE public.pagos ADD CONSTRAINT pagos_pk PRIMARY KEY (pago_id);
+alter table public.pagos add constraint pagos_trabajador_fk foreign key (pago_trabajador_fk) references public.trabajadores(trabajador_id) on delete cascade;
+
