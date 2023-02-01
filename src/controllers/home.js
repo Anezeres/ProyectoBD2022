@@ -31,4 +31,23 @@ controller.prueba = async (req, res) => {
     console.log(response);
 };
 
+controller.dashboard = (req, res) => {
+    res.render('dashboard');
+};
+
+controller.ajustes = (req, res) => {
+    res.render('ajustes');
+};
+
+controller.solicitudes = (req, res) => {
+    res.render('solicitudes');
+};
+
+controller.politicas = (req, res) => {
+    res.render('politicas');
+};
+
+controller.cupones = (req, res) => {
+    res.render('cupones');
+};
 module.exports = controller;
