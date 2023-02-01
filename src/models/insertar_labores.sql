@@ -1,0 +1,18 @@
+insert into labores (labor_id, labor_nombre, labor_unidad) values (1, 'Cuidador de perros', 'por hora');
+insert into labores (labor_id, labor_nombre, labor_unidad) values (2, 'Entrega de comida a domicilio', 'por viaje');
+insert into labores (labor_id, labor_nombre, labor_unidad) values (3, 'Transporte privado', 'por viaje');
+insert into labores (labor_id, labor_nombre, labor_unidad) values (4, 'Cuidador de niños', 'por hora');
+insert into labores (labor_id, labor_nombre, labor_unidad) values (5, 'Profesor de ingles', 'por hora');
+insert into labores (labor_id, labor_nombre, labor_unidad) values (6, 'diseño grafico', 'por trabajo');
+insert into labores (labor_id, labor_nombre, labor_unidad) values (7, 'Fotografo de bodas', 'por trabajo');
+insert into labores (labor_id, labor_nombre, labor_unidad) values (8, 'Asesor de compras', 'por trabajo');
+insert into labores (labor_id, labor_nombre, labor_unidad) values (9, 'Gestor de proyectos', 'por proyectos');
+insert into labores (labor_id, labor_nombre, labor_unidad) values (10, 'Diseñador de pagina web', 'por pagina');
+insert into labores (labor_id, labor_nombre, labor_unidad) values (11, 'Desarrollador de aplicaciones', 'por hora');
+insert into labores (labor_id, labor_nombre, labor_unidad) values (12, 'Consultoria de negocios', 'por hora');
+insert into labores (labor_id, labor_nombre, labor_unidad) values (13, 'Psicologo', 'por sesion');
+insert into labores (labor_id, labor_nombre, labor_unidad) values (14, 'Editor de videos', 'por minuto de video');
+insert into labores (labor_id, labor_nombre, labor_unidad) values (15, 'Mantenimiento de equipos', 'por trabajo');
+insert into labores (labor_id, labor_nombre, labor_unidad) values (16, 'Asesoramiento legal', 'por hora');
+insert into labores (labor_id, labor_nombre, labor_unidad) values (17, 'Ilustrador', 'por trabajo');
+insert into labores (labor_id, labor_nombre, labor_unidad) values (18, 'Encuestador', 'por encuesta');
